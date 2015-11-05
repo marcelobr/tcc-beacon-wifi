@@ -72,9 +72,31 @@
 \usepackage{lib/uecetex2}		                    % Biblioteca com as normas da UECE para trabalhos academicos
 \usepackage{pdfpages}                               % Incluir pdf no documento
 \usepackage{amsmath}                                % Usar equacoes matematicas
+%\usepackage{url}
+\usepackage{hyperref}
+\usepackage{textcomp}
 
 % Organiza e gera a lista de abreviaturas, simbolos e glossario
 \makeglossaries
 
 % Gera o Indice do documento
 \makeindex
+
+\lstset{basicstyle=\ttfamily,
+	showstringspaces=false,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue}
+}
+
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
